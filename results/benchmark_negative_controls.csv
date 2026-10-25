@@ -1,0 +1,13 @@
+method,control,image,watermark_detected,watermark_ber,pilot_ber
+sf_dlwm,wrong_key,demo_000.png,0,0.515625,0.3125
+sf_dlwm,unwatermarked,demo_000.png,0,0.53125,0.375
+ll01_style_baseline,wrong_key,demo_000.png,0,0.4375,
+ll01_style_baseline,unwatermarked,demo_000.png,0,0.4375,
+sf_dlwm,wrong_key,demo_001.png,0,0.515625,0.25
+sf_dlwm,unwatermarked,demo_001.png,0,0.515625,0.25
+ll01_style_baseline,wrong_key,demo_001.png,0,0.5,
+ll01_style_baseline,unwatermarked,demo_001.png,0,0.484375,
+sf_dlwm,wrong_key,demo_002.png,0,0.421875,0.1875
+sf_dlwm,unwatermarked,demo_002.png,0,0.40625,0.3125
+ll01_style_baseline,wrong_key,demo_002.png,0,0.609375,
+ll01_style_baseline,unwatermarked,demo_002.png,0,0.609375,

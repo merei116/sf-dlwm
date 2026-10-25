@@ -1,0 +1,40 @@
+# SF-DLWM benchmark configuration. All experiments read this file.
+seed: 42
+key: "sfdlwm-benchmark-key-2026"   # fixed for reproducibility; secret in deployment
+
+dataset:
+  image_dir: data/images      # put USC-SIPI (or other) images here
+  demo_dir: data/demo         # deterministic synthetic fallback
+  n_images: 39
+  image_size: 512
+
+robust:
+  payload_bits: 64
+  pilot_bits: 16
+  ecc_rate: 3
+  strength: 34.0
+  repeats_a: 10
+  repeats_b: 4
+  crop_ratios: [1.00, 0.85, 0.72]
+  ber_threshold: 0.20          # tau_r
+  pilot_threshold: 0.25        # tau_p
+  sync_rotations: [-5.0, -2.0, 2.0, 5.0]
+  sync_crop_ratios: [0.90, 0.85, 0.75]
+  use_stream_b: true
+  use_pilot_sync: true
+
+auth:
+  delta: 26.0                  # QIM step: JPEG tolerance class
+  q_feat: 16.0
+  tau_f: 0.30
+  tau_u: 0.40
+  min_component_blocks: 2
+  coordinate_binding: true
+  morph_cleanup: true
+
+methods: [sf_dlwm, ll01_style_baseline, phash_baseline]
+scenarios: null                # null = all scenarios in src/transforms.py
+
+output:
+  results_dir: results
+  figures_dir: figures

@@ -1,0 +1,38 @@
+{
+  "tag": "benchmark",
+  "dataset": "synthetic_demo",
+  "n_images": 3,
+  "scenarios": [
+    "identity",
+    "jpeg95",
+    "jpeg85",
+    "jpeg70",
+    "jpeg50",
+    "jpeg30",
+    "resize090",
+    "resize075",
+    "resize050",
+    "blur3",
+    "noise8",
+    "crop_center",
+    "rotate5",
+    "telegram_like",
+    "whatsapp_like",
+    "instagram_like",
+    "mixed_instagram_crop_jpeg",
+    "copy_move",
+    "inpaint_like",
+    "copy_move_jpeg85",
+    "inpaint_like_jpeg85"
+  ],
+  "methods": [
+    "sf_dlwm",
+    "ll01_style_baseline",
+    "phash_baseline"
+  ],
+  "seed": 42,
+  "key_fingerprint": "1172731716",
+  "payload_bits": 64,
+  "analytic_random_payload_fa": 2.2833053502227052e-07,
+  "wall_time_s": 179.64978194236755
+}
